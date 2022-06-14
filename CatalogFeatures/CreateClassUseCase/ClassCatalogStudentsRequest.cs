@@ -2,7 +2,7 @@
 
 namespace CatalogFeatures.CreateClassUseCase
 {
-    public class ClassCatalogRequest
+    public class ClassCatalogStudentsRequest
     {
         public RequestClassModel ClassModel { get; set; } = null!;
         public IEnumerable<StudentRequest>? Students { get; set; } = null;
