@@ -1,4 +1,5 @@
-﻿using HighSchoolShared.SubjectExceptions;
+﻿using HighSchoolShared.Exceptions.CatalogExceptions;
+using HighSchoolShared.Exceptions.SubjectExceptions;
 using System.Net;
 using System.Text.Json;
 
@@ -28,6 +29,9 @@ namespace HomeworkAPI.Middleware
                 {
                     case AddSubjectBadRequestException e:
                         // bad request
+                        response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        break;
+                    case CreateClassBadRequestException e:
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         break;
                     default:
