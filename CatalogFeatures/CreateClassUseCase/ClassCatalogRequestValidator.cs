@@ -1,8 +1,9 @@
-﻿using FluentValidation;
+﻿using CatalogFeatures.CreateClassUseCase.UseCaseResponseAndRequests;
+using FluentValidation;
 
 namespace CatalogFeatures.CreateClassUseCase
 {
-    public class ClassCatalogRequestValidator: AbstractValidator<ClassCatalogStudentsRequest>
+    public class ClassCatalogRequestValidator: AbstractValidator<UseCaseMainRequest>
     {
         public ClassCatalogRequestValidator()
         {

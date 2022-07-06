@@ -6,7 +6,7 @@ namespace CatalogFeatures.CreateClassUseCase.BusinessLogic.ClassLogic
     {
         public ClassModelMapper()
         {
-            CreateMap<RequestClassModel, ResponseClassModel>();
+            CreateMap<RequestClassModel, ProcessorClassModel>();
         }
     }
 }
