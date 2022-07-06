@@ -16,6 +16,11 @@
   <ItemGroup>
     <ProjectReference Include="..\DapperORM\DapperORM.csproj" />
     <ProjectReference Include="..\EntityFrameworkORM\EntityFrameworkORM.csproj" />
+    <ProjectReference Include="..\HighSchoolShared\HighSchoolShared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CreateClassUseCase\BusinessLogic\BusinessRulesValidators\" />
   </ItemGroup>
 
 </Project>
